@@ -24,7 +24,11 @@ iconAberto.addEventListener("click", () => {
 });
 
 // Acessar sistema
+const botaoAcesso = document.getElementById("btn-login");
 
+botaoAcesso.addEventListener("click", () => {
+    window.location.href = "../Home.html"; // Redirecionando para a página Home.html
+});
 
 // Scroll Reveal da página
 

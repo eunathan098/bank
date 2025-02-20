@@ -1,0 +1,120 @@
+/* Definição de Cores Padrôes */
+
+/* Laranja Escuro: #FB7E00 */
+/* Laranja Claro: #FFCC3F */
+
+/* Cor Clara - Body: #D1DFD2 */
+/* Cores Textos: #9FC089 */
+/* Cores Textos: #79B4B0 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Nunito", serif;
+}
+
+/* Cabeçalho */
+
+header{
+    display: flex;
+    padding: 15px 35px 15px 35px;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FB7E00;
+    gap: 20px;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+header h1{
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-header-icons{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Corpo - Conteúdo */
+
+body{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1DFD2;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.content{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1DFD2;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container-dashboard{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.dashboard{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    flex-direction: column;
+}
+
+.subtitulo{
+    font-size: 15px;
+    font-family: "Nunito", serif;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.509);
+}
+
+.logotipo-dashboard{
+    width: 100%;
+    background-color: #FB7E00;
+    padding: 20px 0px 20px 0px;
+}
+
+.logotipo-dashboard h1{
+    color: #fff;
+    font-family: "Nunito", serif;
+    font-weight: bold;
+}
+.container-dashboard-rows{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    width: 100%;
+    background-color: #FFCC3F;
+    border: 2px solid yellow;
+    cursor: pointer;
+}
+
+.container-cols{
+    display: flex;
+    width: 100px;
+    height: 130px;
+    border: 2px solid red;
+}
