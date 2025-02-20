@@ -1,0 +1,191 @@
+/* Definição de Cores Padrôes */
+
+/* Laranja Escuro: #FB7E00 */
+/* Laranja Claro: #FFCC3F */
+
+/* Cor Clara - Body: #D1DFD2 */
+/* Cores Textos: #9FC089 */
+/* Cores Textos: #79B4B0 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Nunito", serif;
+}
+
+/* Cabeçalho */
+
+header{
+    display: flex;
+    padding: 15px;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #FB7E00;
+    gap: 20px;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
+header h1{
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Corpo - Conteúdo */
+
+body{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #D1DFD2;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.content{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../imagens/banner-fundo-horizontal.jpg");
+    height: 100vh;
+    width: 100vw;
+    padding-bottom: 80px;
+}
+
+.container-login{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 350px;
+    visibility: hidden;
+    background-color: #FB7E00;
+    box-shadow: 0px 0px 2px 0px black;
+}
+
+.container-logotipo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 20%;
+    width: 100%;
+    background-color: #FB7E00;
+    color: #fff;
+    padding: 20px;
+}
+
+.container-logotipo p{
+    font-weight: bold;
+    font-family: "Nunito", serif;
+}
+
+.login{
+    display: flex;
+    padding: 30px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 80%;
+    width: 100%;
+    background-color: #D1DFD2;
+}
+
+.container-name-inputs{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 5px;
+    margin: 5px;
+    width: 100%;
+}
+
+.container-name-inputs p{
+    font-weight: bold;
+    font-size: 12px;
+    font-family: "Nunito", serif;
+    color: rgba(0, 0, 0, 0.453);
+}
+
+.container-inputs{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    width: 100%;
+    background-color: #fff;
+}
+
+input{
+    border: none;
+    outline: none;
+    font-size: 15px;
+    width: 85%;
+    font-family: "Nunito", serif;
+}
+
+#olho-fechado{
+    cursor: pointer;
+}
+
+#olho-aberto{
+    display: none;
+}
+
+.btn-login{
+    display: flex;
+    padding: 5px;
+    margin-top: 10px;
+    color: #fff;
+    background-color: #FB7E00;
+    font-family: "Nunito", serif;
+    font-size: 12px;
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-voltar{
+    padding: 5px;
+    color: #fff;
+    background-color: rgb(105, 105, 246);
+    margin-top: 5px;
+    width: 100%;
+    font-family: "Nunito", serif;
+    font-size: 12px;
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.btn-voltar:hover{
+    background-color: #fff;
+    color: rgb(105, 105, 246);
+    border: 1px solid rgb(105, 105, 246);
+    cursor: pointer;
+}
+
+.btn-login:hover{
+    background-color: #fff;
+    color: #FB7E00;
+    border: 1px solid #FB7E00;
+}
+
+.container-link-cadastro{
+    display: flex;
+    padding: 10px;
+    gap: 20px;
+}
+
+.container-link-cadastro a{
+    color: black;
+    font-size: 12px;
+    text-decoration: none;
+}
