@@ -41,10 +41,10 @@ btnAcesso.addEventListener("click", () => {
 });
 
 // Inicializa o ScrollReveal
-// const sr = ScrollReveal({ reset: true });
+const sr = ScrollReveal({ reset: true });
 
 // Aplica o efeito de revelação para o seletor desejado
-// sr.reveal(".container-login", { duration: 2500 });
+sr.reveal(".container-login", { duration: 2500 });
 
 
 const btnEsqueceuSenha = document.getElementById("esqueceu-senha") as HTMLElement | null;
