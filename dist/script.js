@@ -36,16 +36,16 @@ btnAcesso.addEventListener("click", () => {
     }
 });
 // Inicializa o ScrollReveal
-const sr = ScrollReveal({ reset: true });
+// const sr = ScrollReveal({ reset: true });
 // Aplica o efeito de revelação para o seletor desejado
-sr.reveal(".container-login", { duration: 2500 });
+// sr.reveal(".container-login", { duration: 2500 });
 const btnEsqueceuSenha = document.getElementById("esqueceu-senha");
 const containerEsqueceuSenha = document.querySelector(".container-digite-email");
 // Verifique se o botão e o contêiner existem antes de adicionar o EventListener
 if (btnEsqueceuSenha && containerEsqueceuSenha) {
     btnEsqueceuSenha.addEventListener("click", () => {
         // Supondo que `sr.reveal()` seja uma biblioteca para animação
-        sr.reveal(".container-digite-email", { duration: 3000 });
+        // sr.reveal(".container-digite-email", { duration: 3000 });
         containerEsqueceuSenha.style.display = "block"; // Torna o contêiner visível
     });
 }
