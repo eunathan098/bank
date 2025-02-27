@@ -54,7 +54,7 @@ const containerEsqueceuSenha: HTMLElement | null = document.querySelector(".cont
 if (btnEsqueceuSenha && containerEsqueceuSenha) {
     btnEsqueceuSenha.addEventListener("click", () => {
         // Supondo que `sr.reveal()` seja uma biblioteca para animação
-        // sr.reveal(".container-digite-email", { duration: 3000 });
+        sr.reveal(".container-digite-email", { duration: 3000 });
         containerEsqueceuSenha.style.display = "block"; // Torna o contêiner visível
     });
 } else {
