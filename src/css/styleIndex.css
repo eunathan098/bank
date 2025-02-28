@@ -61,10 +61,6 @@ body{
     background-size: cover;
 }
 
-.container-celular-mobile{
-    display: flex;
-}
-
 .container-login{
     display: flex;
     text-align: center;
@@ -173,7 +169,7 @@ input{
 }
 
 /* Loader */
-    
+
 .container-link-cadastro{
     display: flex;
     padding: 10px;
@@ -250,10 +246,6 @@ input{
 @media (min-width: 320px) and (max-width: 769px){
     body{
         overflow-y: hidden;
-    }
-
-    .container-celular-mobile{
-        display: none;
     }
 
     .container-digite-email{
