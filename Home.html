@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styleHome.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="Javascript/scriptDashboard.js" defer></script>
+    <script src="dist/scriptHome.js" type="module" defer></script>
     <title> Home </title>
 </head>
 <body>
@@ -14,9 +14,8 @@
         <img src="./src/imagens/menu-lateral.png" alt="icone-menu-lateral" height="30px">
         <div class="container-header-icons">
             <h1> Seja Bem-vindo </h1>
-            <img src="./src/imagens/banco.png" alt="icone-banco" height="40px">
         </div>
-        <img src="./src/imagens/avatar.png" alt="icone-perfil-usuario" height="30px">
+        <img src="./src/imagens/my-perfil.jpeg" alt="icone-perfil-usuario" class="perfil-img">
     </header>
 
         <section class="content">
@@ -28,33 +27,32 @@
                         </div>
                         <div class="container-dashboard-rows">
                             <div class="container-cols">
-                                <p id="client"> Receitas </p>
+                                <p id="client"> Perfil </p>
                             </div>
                             <div class="container-cols">
-                                <p id="add-receita"> Despesas </p>
+                                <p id="add-receita"> Receitas </p>
                             </div>
 
                             <div class="container-cols">
-                                <p id="add-gasto"> Clientes </p>
+                                <p id="add-gasto"> Despesas </p>
                             </div>
                         </div>
 
                         <div class="container-dashboard-rows">
                             <div class="container-cols">
-                                <p id="receita"> Indefinido </p>
+                                <p id="receita"> Clientes </p>
                             </div>
                             
                             <div class="container-cols">
-                                <p id="despesas"> Indefinido </p>
+                                <p id="despesas"> Resumo </p>
                             </div>
 
                             <div class="container-cols">
-                                <p id="btn-relatorio"> Indefinido </p>
+                                <p id="btn-relatorio"> Histórico </p>
                             </div>
                         </div>
                     </div>
                 </div>
-
                 </div>
             </div>
         </section>

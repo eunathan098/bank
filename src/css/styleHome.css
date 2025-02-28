@@ -42,6 +42,11 @@ header h1{
     gap: 10px;
 }
 
+.perfil-img{
+    height: 30px;
+    border-radius: 50%;
+}
+
 /* Corpo - Conteúdo */
 
 body{

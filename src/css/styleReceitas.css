@@ -1,0 +1,86 @@
+/* Definição de Cores Padrôes */
+
+/* Laranja Escuro: #FB7E00 */
+/* Laranja Claro: #FFCC3F */
+
+/* Cor Clara - Body: #D1DFD2 */
+/* Cores Textos: #9FC089 */
+/* Cores Textos: #79B4B0 */
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Nunito", serif;
+}
+
+/* Cabeçalho */
+
+header{
+    display: flex;
+    padding: 15px 35px 15px 35px;
+    width: 100vw;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #FB7E00;
+    gap: 20px;
+    /* box-shadow: 10px 10px 10px 10px black; */
+}
+
+header h1{
+    color: #fff;
+    font-weight: bold;
+}
+
+.container-header-icons{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.perfil-img{
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Corpo - Conteúdo */
+
+body{
+    display: flex;
+    text-align: center; 
+    align-items: center;
+    justify-content: center;
+    background-color: #D1DFD2;
+    flex-direction: column;
+    overflow-y: hidden;
+}
+
+.content{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.header-title{
+    display: flex;
+    padding: 20px;
+    padding-right: 5%;
+    text-align: right;
+    justify-content: right;
+    width: 100vw;
+    background-color: #FB7E00;
+    top: 20%;
+    position: absolute;
+    /* border-radius: 30% 30% 0% 0%; */
+}
+
+.header-title p{
+    color: #fff;
+}
