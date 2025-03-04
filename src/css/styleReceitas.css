@@ -84,3 +84,88 @@ body{
 .header-title p{
     color: #fff;
 }
+
+/* Tabela financeira */
+
+table{
+    border: 2px solid black;
+}
+
+.header-table{
+    color: #fff;
+    background-color: #FB7E00;
+}
+
+.header-table-columns{
+    padding: 20px;
+    background-color: beige;
+}
+
+.header-table th{
+    padding: 20px;
+   
+}
+
+.container-content-table{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.tabela-financeira {
+    padding-top: 150px;
+    border-radius: 8px;
+    width: 80%;
+    overflow-x: auto; /* Permite rolagem horizontal */
+}
+
+/* Contêiner para a tabela para permitir rolagem horizontal */
+.tabela-financeira table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 16px;
+    table-layout: fixed; /* Para que a tabela não estique excessivamente */
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #FB7E00;
+    color: #fff;
+}
+
+
+
+#selecao-todas {
+    cursor: pointer;
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    .tabela-financeira {
+        width: 100%; /* Garantir que o contêiner ocupe toda a largura da tela */
+        padding: 10px; /* Menos espaçamento nas telas menores */
+    }
+
+    table {
+        font-size: 14px;
+        /* Adicionando rolagem horizontal caso a tabela ultrapasse a largura da tela */
+        display: block;
+        overflow-x: auto; /* Garante a rolagem */
+        white-space: nowrap; /* Evita quebra de texto nas células */
+    }
+
+    th, td {
+        white-space: nowrap; /* Impede que o texto seja quebrado para várias linhas */
+        padding: 8px; /* Menor espaçamento nas células para telas pequenas */
+    }
+}
