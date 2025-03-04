@@ -12,47 +12,99 @@
 <body>
     <header>
         <img src="./src/imagens/menu-mobile-lateral.png" alt="icone-menu-lateral" height="30px">
+        <h1> Despesas</h1>
         <img src="./src/imagens/perfil-2.jpg" alt="icone-perfil-usuario" height="30px" class="perfil-img">
     </header>
 
     <section class="content">
-        <div class="header-title">
-            <p> Despesas </p>
+        <div class="container-header">
+            <img src="src/imagens/mais.png" alt="" height="30px">
+            <img src="src/imagens/filtro.png" alt="" height="30px">
+            <img src="src/imagens/lixeira.png" alt="" height="30px">
         </div>
-        <div class="container-table-receitas">
-            <table>
-                <tr>
-                    <td> teste </td>
-                    <td> teste </td>
-                    <td> teste </td>
-                    <td> teste </td>
-                    <td> teste </td>
-                </tr>
-
-                <tr>
-                    <td> teste </td>
-                    <td> teste </td>
-                    <td> teste </td>
-                    <td> teste </td>
-                    <td> teste </td>
-                </tr>
-
-                <tr>
-                    <td> teste </td>
-                    <td> teste </td>
-                    <td> teste </td>
-                    <td> teste </td>
-                    <td> teste </td>
-                </tr>
-            </table>
-        </div>
+        <div class="container-content-table">
 
 
-
-    </section>
-
-      
-               
+            <section class="tabela-financeira">
+                <table>
+                    <thead>
+                        <tr class="header-table">
+                            <th><input type="checkbox" id="selecao-todas"> Todas </th>
+                            <th>Cliente</th>
+                            <th>Descrição</th>
+                            <th>Tipo de Natureza</th>
+                            <th>Valor</th>
+                            <th>Data de Pagamento</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <!-- Exemplo de Linha de Receita -->
+                        <tr class="header-table-columns">
+                            <td><input type="checkbox" class="selecionar-linha"></td>
+                            <td>Jose Alves</td>
+                            <td>Venda de Produto X</td>
+                            <td>Receita</td>
+                            <td>R$ 500,00</td>
+                            <td>01/03/2025</td>
+                            <td>Concluído</td>
+                        </tr>
+        
+                        <!-- Exemplo de Linha de Despesa -->
+                        <tr class="header-table-columns">
+                            <td><input type="checkbox" class="selecionar-linha"></td>
+                            <td>Francisco</td>
+                            <td>Compra de Insumos Y</td>
+                            <td>Despesa</td>
+                            <td>R$ 300,00</td>
+                            <td>02/03/2025</td>
+                            <td>Pendente</td>
+                        </tr>
     
+                        <tr class="header-table-columns">
+                            <td><input type="checkbox" class="selecionar-linha"></td>
+                            <td>Maria Helena</td>
+                            <td>Compra de Insumos Y</td>
+                            <td>Despesa</td>
+                            <td>R$ 300,00</td>
+                            <td>02/03/2025</td>
+                            <td>Pendente</td>
+                        </tr>
+    
+                        <tr class="header-table-columns">
+                            <td><input type="checkbox" class="selecionar-linha"></td>
+                            <td>Julia Silva</td>
+                            <td>Compra de Insumos Y</td>
+                            <td>Despesa</td>
+                            <td>R$ 300,00</td>
+                            <td>02/03/2025</td>
+                            <td>Pendente</td>
+                        </tr>
+    
+                        <tr class="header-table-columns">
+                            <td><input type="checkbox" class="selecionar-linha"></td>
+                            <td>Julia Silva</td>
+                            <td>Compra de Insumos Y</td>
+                            <td>Despesa</td>
+                            <td>R$ 300,00</td>
+                            <td>02/03/2025</td>
+                            <td>Pendente</td>
+                        </tr>
+    
+                        <tr class="header-table-columns">
+                            <td><input type="checkbox" class="selecionar-linha"></td>
+                            <td>Julia Silva</td>
+                            <td>Compra de Insumos Y</td>
+                            <td>Despesa</td>
+                            <td>R$ 300,00</td>
+                            <td>02/03/2025</td>
+                            <td>Pendente</td>
+                        </tr>
+        
+                        <!-- Adicionar mais linhas aqui conforme necessário -->
+                    </tbody>
+                </table>
+            </section>
+        </div>
 </body>
 </html>
