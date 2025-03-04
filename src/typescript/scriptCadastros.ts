@@ -1,45 +1,54 @@
-// Função para mudar o ícone de olho fechado para aberto
-const iconeFechado: HTMLElement | null = document.getElementById("olho-fechado");
-const iconeAberto:  HTMLElement | null = document.getElementById("olho-aberto");
-const inputDeCPF: any = document.getElementById("input-CPF");
-const campoDeSenha: any= document.getElementById("input-password");
+const olhoFechado = document.getElementById("olho-fechado") as HTMLElement;
+const olhoAberto = document.getElementById("olho-aberto") as HTMLElement;
+const inputPassword = document.getElementById("input-password") as HTMLInputElement;
 
-// iconeFechado.addEventListener("click", () => {
-//     // Esconde o ícone de olho fechado e mostra o ícone de olho aberto
-//     iconeFechado.style.display = "none";
-//     iconeAberto.style.display = "block";
-    
-    // Torna o campo de senha visível (tipo 'text')
-    // campoDeSenha.type = "text";
-    
-    // if(!inputCPF || campoSenha){
-    //     alert("Eii, campos inválidos. Verifique e tente novamente!");
-    // } else {
-    //     const acessoSistema = document.getElementById("btn-login");
-    //     acessoSistema.addEventListener("click", ()=>{
-    //     alert(`O usuário Joâo Barroso Oliveira já cadastrou a senha ${campoSenha.value}`)
-    //     })
-    // }
-// });
+const olhoFechadoConfirme = document.getElementById("olho-fechado-confirme") as HTMLElement;
+const olhoAbertoConfirme = document.getElementById("olho-aberto-confirme") as HTMLElement;
+const inputPasswordConfirme = document.getElementById("input-password-confirme") as HTMLInputElement;
 
-// iconAberto.addEventListener("click", () => {
-//     // Esconde o ícone de olho aberto e mostra o ícone de olho fechado
-//     iconeFechado.style.display = "block";
-//     iconeAberto.style.display = "none";
+// Função de abertura de Olhos
+if (olhoFechado) {
+    olhoFechado.addEventListener("click", () => {
+        inputPassword.type = "text";
+        olhoFechado.style.display = "none";
+        olhoAberto.style.display = "block";
+    });
+}
 
-//     // Torna o campo de senha oculto (tipo 'password')
-//     campoSenha.type = "password";
-// });
+// Função de fechamento de Olhos
+if (olhoAberto) {
+    olhoAberto.addEventListener("click", () => {
+        inputPassword.type = "password";
+        olhoAberto.style.display = "none";
+        olhoFechado.style.display = "block";
+    });
+}
 
-// Scroll Reveal da página
+// Funçôes de confirmação de senha
+if (olhoFechadoConfirme) {
+    olhoFechadoConfirme.addEventListener("click", () => {
+        inputPasswordConfirme.type = "text";
+        olhoFechadoConfirme.style.display = "none";
+        olhoAbertoConfirme.style.display = "block";
+    });
+}
 
-// window.sr = ScrollReveal({ reset: true})
+if (olhoAbertoConfirme) {
+    olhoAbertoConfirme.addEventListener("click", () => {
+        inputPasswordConfirme.type = "password";
+        olhoAbertoConfirme.style.display = "none";
+        olhoFechadoConfirme.style.display = "block";
+    });
+}
 
-// sr.reveal(".container-login", {duration: 2500
-// });
+// Função de envio do formulário
+const formCadastro = document.getElementById("form-cadastro") as HTMLFormElement;
+formCadastro.addEventListener("submit", (e) => {
+    const password = inputPassword.value;
+    const confirmPassword = inputPasswordConfirme.value;
 
-// const btnCadastro: any = document.getElementById("btn-cadastrar");
-
-// btnCadastro.addEventListener("click", function(){
-//     alert("funcionando ?")
-// });
+    if (password !== confirmPassword) {
+        e.preventDefault(); // Prevent form submission
+        alert("As senhas não coincidem!");
+    }
+});

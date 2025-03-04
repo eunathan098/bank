@@ -6,57 +6,52 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="src/css/styleTelaDeCadastros.css">
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="dist/scriptTelaCadastros.js" defer></script>
-    <title> Banco PimeCash - Login </title>
+    <script src="dist/scriptCadastros.js" defer></script>
+    <title> Tela de Cadastro </title>
 </head>
 <body>
-    <!-- <header>
-        <h1> Tela de Cadastros </h1>
-        <img src="imagens/banco.png" alt="icone-banco" height="40px">
-    </header> -->
-
-        <section class="content">
-            <div class="container-login">
-                <div class="container-logotipo">
-                    <p> Faça o seu cadastro </p>
-                </div>
-                <div class="login">
-
-                    <div class="container-name-inputs">
-                        <p> Nome: </p>
-                        <div class="container-inputs">
-                            <input type="text" placeholder="Digite o seu nome..." id="input-CPF" required>
-                        </div>
-                    </div>
-                    <div class="container-name-inputs">
-                        <p> E-mail: </p>
-                        <div class="container-inputs">
-                            <input type="email" id="input-cpf"  placeholder="Digite seu E-mail" oninput="formatarCPF(this)" />
-                        </div>
-                    </div>
-    
-                    <div class="container-name-inputs">
-                        <p> Senha: </p>
-                        <div class="container-inputs">
-                            <input type="password" id="input-password" placeholder="Digite sua senha" maxlength="6" oninput="validarSenha(this)">
-                            <img src="./src/imagens/olho-fechado.png" alt="olho-fechado" height="20px" id="olho-fechado">
-                            <img src="./src/imagens/olho-aberto.png"  alt="olho-fechado" height="20px" id="olho-aberto">
-                        </div>
-                    </div>
-
-                    <div class="container-name-inputs">
-                        <p> Confirme sua senha: </p>
-                        <div class="container-inputs">
-                            <input type="password" id="input-password" placeholder="Confirme a sua senha" maxlength="6" oninput="validarSenha(this)">
-                            <img src="./src/imagens/olho-fechado.png" alt="olho-fechado" height="20px" id="olho-fechado">
-                            <img src="./src/imagens/olho-aberto.png"  alt="olho-fechado" height="20px" id="olho-aberto">
-                        </div>
-                    </div>
-                    <input type="submit" value="Cadastrar" class="btn-login" id="btn-cadastrar">
-                    <a href="index.html" class="btn-voltar"> Voltar </a>
-                </div>
+    <section class="content">
+        <form id="form-cadastro" method="POST" action="processarCadastro.php">
+            <div class="container-logotipo">
+                <p> Faça o seu cadastro </p>
             </div>
-        </section>
-    
+            <div class="login">
+                <div class="container-name-inputs">
+                    <p> Nome: </p>
+                    <div class="container-inputs">
+                        <input type="text" placeholder="Digite o seu nome..." id="input-nome" required autocomplete="name">
+                    </div>
+                </div>
+
+                <div class="container-name-inputs">
+                    <p> E-mail: </p>
+                    <div class="container-inputs">
+                        <input type="email" id="input-email" placeholder="Digite seu E-mail" required autocomplete="email">
+                    </div>
+                </div>
+
+                <div class="container-name-inputs">
+                    <p> Senha: </p>
+                    <div class="container-inputs">
+                        <input type="password" id="input-password" placeholder="Digite sua senha" maxlength="6" required autocomplete="new-password">
+                        <img src="./src/imagens/olho-fechado.png" alt="olho-fechado" height="20px" id="olho-fechado">
+                        <img src="./src/imagens/olho-aberto.png"  alt="olho-aberto" height="20px" id="olho-aberto">
+                    </div>
+                </div>
+
+                <div class="container-name-inputs">
+                    <p> Confirme sua senha: </p>
+                    <div class="container-inputs">
+                        <input type="password" id="input-password-confirme" placeholder="Confirme a sua senha" maxlength="6" required autocomplete="new-password">
+                        <img src="./src/imagens/olho-fechado.png" alt="olho-fechado" height="20px" id="olho-fechado-confirme">
+                        <img src="./src/imagens/olho-aberto.png"  alt="olho-aberto" height="20px" id="olho-aberto-confirme">
+                    </div>
+                </div>
+
+                <input type="submit" value="Cadastrar" class="btn-login" id="btn-cadastrar">
+                <a href="index.html" class="btn-voltar"> Voltar </a>
+            </div>
+        </form>
+    </section>
 </body>
 </html>

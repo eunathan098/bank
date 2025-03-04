@@ -7,55 +7,56 @@
     <link rel="stylesheet" href="src/css/styleIndex.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="dist/script.js" type="module" defer></script>
-    <title> Banco PrimeCash - Login </title>
+    <title>Login</title>
 </head>
 <body>
     <!-- <header>
         <p> aqui tem um texto </p>
-       <img src="imagens/banco.png" alt="icone-banco" height="40px">
-    </header>  -->
-        <section class="content">
-            <div class="container-login">
-                <div class="container-logotipo">
-                    <p> Acesse a sua Conta </p>
-                </div>
-                <div class="login">
+        <img src="imagens/banco.png" alt="icone-banco" height="40px">
+    </header> -->
+    <section class="content">
+        <div class="container-login">
+            <div class="container-logotipo">
+                <p>Acesse a sua Conta</p>
+            </div>
+            <div class="login">
+                <form action="#" method="POST" id="form-login">
                     <div class="container-name-inputs">
-                        <p> E-mail </p>
+                        <p>E-mail</p>
                         <div class="container-inputs">
-                            <input type="email" id="input-email" placeholder="Digite seu e-mail" />
+                            <input type="email" id="input-email" placeholder="Digite seu e-mail" required />
                         </div>
                     </div>
-    
                     <div class="container-name-inputs">
-                        <p> Senha: </p>
+                        <p>Senha:</p>
                         <div class="container-inputs">
-                            <input type="password" id="input-password" placeholder="Digite sua senha">
+                            <input type="password" id="input-password" placeholder="Digite sua senha" required />
                             <img src="src/imagens/olho-fechado.png" alt="olho-fechado" height="20px" id="olho-fechado">
-                            <img src="src/imagens/olho-aberto.png" alt="olho-fechado" height="20px" id="olho-aberto">
+                            <img src="src/imagens/olho-aberto.png" alt="olho-aberto" height="20px" id="olho-aberto">
                         </div>
                     </div>
-                    <input type="submit" value="Acessar Conta" class="btn-login" id="botao-login"> <!-- Corrigido para corresponder ao código JS -->
+                    <input type="submit" value="Acessar Conta" class="btn-login" id="botao-login">
 
                     <!-- Container do Loader (Loading...) -->
                     <div class="container-loader" id="container-loader">
                         <div class="loader" id="loader"> </div>
                     </div>
-                    
+
                     <div class="container-link-cadastro" id="container-link-cadastro">
-                        <a href="#" id="esqueceu-senha"> Esqueceu a senha ? </a>
-                        <a href="telaDeCadastro.html"> Cadastre-se </a>
+                        <a href="#" id="esqueceu-senha">Esqueceu a senha ?</a>
+                        <a href="telaDeCadastro.html">Cadastre-se</a>
                     </div>
-                </div>
+                </form>
             </div>
-        </section>
-        <div class="container-digite-email" id="container-esqueceu-senha">
-            <p id="btn-fechar-container"> X </p><br>
-            <p> Digite seu e-mail para recuperação </p><br>
-            <div class="container-input-email">
-                <input type="email" placeholder="Digite seu melhor e-mail...">
-            </div>
-            <input type="submit" value="Enviar redefinição">
         </div>
+    </section>
+    <div class="container-digite-email" id="container-esqueceu-senha">
+        <p id="btn-fechar-container">X</p><br>
+        <p>Digite seu e-mail para recuperação</p><br>
+        <div class="container-input-email">
+            <input type="email" placeholder="Digite seu melhor e-mail..." required />
+        </div>
+        <input type="submit" value="Enviar redefinição">
+    </div>
 </body>
 </html>
