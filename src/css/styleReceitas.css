@@ -64,31 +64,33 @@ body{
     text-align: center;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     width: 100vw;
+    flex-direction: column;
+    padding-top: 40px;
 }
 
-.header-title{
+.container-header{
     display: flex;
-    padding: 20px;
-    padding-right: 5%;
     text-align: right;
+    align-items: right;
     justify-content: right;
-    width: 100vw;
-    background-color: #FB7E00;
-    top: 20%;
-    position: absolute;
-    /* border-radius: 30% 30% 0% 0%; */
+    width: 100%;
+    padding-right: 20px;
+    gap: 10px;
 }
 
-.header-title p{
-    color: #fff;
+.container-header img{
+  cursor: pointer;
 }
+
+.container-header img:hover{
+    opacity: 0.6;
+  }
 
 /* Tabela financeira */
 
 table{
-    border: 2px solid black;
+    border: 2px solid rgba(0, 0, 0, 0.196);
 }
 
 .header-table{
@@ -118,9 +120,11 @@ table{
 }
 
 .tabela-financeira {
-    padding-top: 150px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
     border-radius: 8px;
-    width: 80%;
+    /* width: 80%; */
     overflow-x: auto; /* Permite rolagem horizontal */
 }
 
@@ -128,7 +132,7 @@ table{
 .tabela-financeira table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 16px;
+    font-size: 12px;
     table-layout: fixed; /* Para que a tabela não estique excessivamente */
 }
 
@@ -153,7 +157,6 @@ th {
 @media (max-width: 768px) {
     .tabela-financeira {
         width: 100%; /* Garantir que o contêiner ocupe toda a largura da tela */
-        padding: 10px; /* Menos espaçamento nas telas menores */
     }
 
     table {
@@ -166,6 +169,5 @@ th {
 
     th, td {
         white-space: nowrap; /* Impede que o texto seja quebrado para várias linhas */
-        padding: 8px; /* Menor espaçamento nas células para telas pequenas */
     }
 }
