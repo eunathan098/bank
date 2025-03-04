@@ -16,7 +16,6 @@
 }
 
 /* Cabeçalho */
-
 header{
     display: flex;
     padding: 15px 35px 15px 35px;
@@ -48,7 +47,6 @@ header h1{
 }
 
 /* Corpo - Conteúdo */
-
 body{
     display: flex;
     text-align: center; 
@@ -88,7 +86,6 @@ body{
   }
 
 /* Tabela financeira */
-
 table{
     border: 2px solid rgba(0, 0, 0, 0.196);
 }
@@ -105,7 +102,6 @@ table{
 
 .header-table th{
     padding: 20px;
-   
 }
 
 .container-content-table{
@@ -147,11 +143,17 @@ th {
     color: #fff;
 }
 
-
-
 #selecao-todas {
     cursor: pointer;
 }
+
+/* Footer - Rodapé */
+/* .developer{
+    bottom: 3%;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.396);
+    font-family: "Nunito", serif;
+} */
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
