@@ -46,15 +46,24 @@ lixeiraReceita.addEventListener("click", function(){
     alert("Esta funcionalidade excluirá os registros selecionados da tela");
 });
 
-// Função para marcar todas as checkbox
-
+// Função para marcar todas as checkboxes
 const selectAll = document.getElementById("selecao-todas") as HTMLInputElement;
-const selectOne = document.querySelectorAll(".selecionar-linha") as NodeListOf <HTMLInputElement>;
+const selectOne = document.querySelectorAll(".selecionar-linha") as NodeListOf<HTMLInputElement>;
 
-selectAll.addEventListener("click", function(){
-    selectOne.forEach(item => {
+selectAll.addEventListener("click", function() {
+    // Converter o NodeList para um array para usar forEach
+    Array.from(selectOne).forEach(item => {
         item.checked = selectAll.checked;
-    })
+    });
+});
+
+
+// Fechar container de formulário
+
+const iconeFecharForm = document.getElementById("icone-fechar-form") as HTMLElement;
+
+iconeFecharForm.addEventListener("click", function(){
+    formAdicionar.style.display = "none";
 });
 
 // adicionar registros 

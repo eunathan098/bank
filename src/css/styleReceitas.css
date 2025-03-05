@@ -33,6 +33,13 @@ header h1{
     font-weight: bold;
 }
 
+.container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .container-header-icons{
     display: flex;
     text-align: center;
@@ -44,6 +51,14 @@ header h1{
 .perfil-img{
     height: 30px;
     border-radius: 50%;
+}
+
+#icone-fechar-form{
+    display: flex;
+    position: absolute;
+    right: 3%;
+    height: 30px;
+    cursor: pointer;
 }
 
 /* Corpo - Conteúdo */
@@ -220,13 +235,13 @@ th {
     top: 10%;
     width: 60%;
     flex-direction: column;
-    background-color: #D1DFD2;
+    background-color: #fff;
     box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.383);
 }
 
 .container-title-form{
     display: flex;
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -243,11 +258,11 @@ th {
     text-align: left;
     justify-content: space-between;
     padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 10px;
     align-items: center;
-    gap: 10px;
     width: 100%;
+    background-color: #fff;
+    border: 2px solid rgba(0, 0, 0, 0.22);
+
 }
 
 .container-inputs label{
@@ -261,6 +276,7 @@ th {
     width: 70%;
     outline: none;
     border: none;
+    height: 100%;
 }
 
 #adicionar-linha{
@@ -268,7 +284,17 @@ th {
     background-color: #FB7E00;
     padding: 10px;
     border: none;
-    margin-bottom: 10px;
+    font-family: "Nunito", serif;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: transform 5s ease-in-out;
+}
+
+#adicionar-linha:hover{
+    background-color: #fff;
+    color: #FB7E00;
 }
 
 /* Responsividade para telas menores */

@@ -35,13 +35,19 @@ const lixeiraReceita = document.getElementById("lixeira-Receitas");
 lixeiraReceita.addEventListener("click", function () {
     alert("Esta funcionalidade excluirá os registros selecionados da tela");
 });
-// Função para marcar todas as checkbox
+// Função para marcar todas as checkboxes
 const selectAll = document.getElementById("selecao-todas");
 const selectOne = document.querySelectorAll(".selecionar-linha");
 selectAll.addEventListener("click", function () {
-    selectOne.forEach(item => {
+    // Converter o NodeList para um array para usar forEach
+    Array.from(selectOne).forEach(item => {
         item.checked = selectAll.checked;
     });
+});
+// Fechar container de formulário
+const iconeFecharForm = document.getElementById("icone-fechar-form");
+iconeFecharForm.addEventListener("click", function () {
+    formAdicionar.style.display = "none";
 });
 // adicionar registros 
 // Seleciona os elementos do DOM
