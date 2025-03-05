@@ -135,17 +135,21 @@ body{
 
 /* Menu lateral Mobile */
 
-.container-menu-mobile{
-    display: none;
-    position: absolute;
-    text-align: center;
-    justify-content: center;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.404);
-    width: 100%;
+#container-menu-mobile {
+    position: fixed;
     top: 0;
+    left: -250px; /* Menu começando fora da tela */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out; /* Animação suave */
+    z-index: 1000;
 }
 
+/* Classe que indica que o menu está visível */
+#container-menu-mobile.show {
+    left: 0; /* Move o menu para dentro da tela */
+}
 .menu-mobile{
     padding-top: 10px;
     display: flex;
@@ -215,8 +219,10 @@ body{
 }
 
 #container-display-perfil ul li{
+    padding: 10px;
     list-style: none;
     width: 100%;
+    border: 1px solid #fff;
 }
 @media(min-width: 320px) and (max-width: 768px) {
     .dashboard{

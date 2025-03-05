@@ -12,12 +12,13 @@ openDespesas.addEventListener("click", function(){
     window.location.href = "despesas.html";
 });
 
-// Função de abrir meni mobile 
+// Função de abrir/fechar menu mobile
 const iconMobile = document.getElementById("icon-abrir") as HTMLElement;
 const containerMenuMobile = document.getElementById("container-menu-mobile") as HTMLElement;
 
-iconMobile.addEventListener("click", function(){
-    containerMenuMobile.style.display = "block";
+iconMobile.addEventListener("click", function() {
+    // Alterna a classe 'show' para abrir ou fechar o menu
+    containerMenuMobile.classList.toggle("show");
 });
 
 // Função de fechar Meu Mobile
@@ -37,5 +38,9 @@ const displayPerfil = document.getElementById("container-display-perfil") as HTM
 const imgPerfil = document.getElementById("img-perfil") as HTMLElement;
 
 imgPerfil.addEventListener("click", function(){
-    displayPerfil.style.display = "block";
+    if(displayPerfil.style.display === "block"){
+        displayPerfil.style.display = "none";
+    } else {
+        displayPerfil.style.display = "block";
+    }
 });
