@@ -133,6 +133,91 @@ body{
     background-color: #FB7E00;
 }
 
+/* Menu lateral Mobile */
+
+.container-menu-mobile{
+    display: none;
+    position: absolute;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.404);
+    width: 100%;
+    top: 0;
+}
+
+.menu-mobile{
+    padding-top: 10px;
+    display: flex;
+    height: 100%;
+    width: 250px;
+    background-color: #FB7E00;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    text-align: left;
+}
+
+#icon-abrir{
+    cursor: pointer;
+}
+
+#icon-fechar{
+    cursor: pointer;
+}
+
+.container-icon-mobile{
+    display: flex;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: left;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.menu-mobile ul li{
+    border: 2px solid #ffffff1c;
+    padding: 10px;
+    width: 100%;
+}
+
+.menu-mobile ul li:hover{
+    color: #FB7E00;
+    background-color: #D1DFD2;
+}
+
+.mobile-navigation{
+    color: #fff;
+    font-family: "Nunito", serif;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+/* Display ao clicar na imagem de perfil  */
+
+
+#container-display-perfil{
+    display: none;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    background-color: #FB7E00;
+    position: absolute;
+    top: 7%;
+    right: 0;
+}
+
+#container-display-perfil ul li a{
+    text-decoration: none;
+    color: #fff;
+    width: 100%;
+}
+
+#container-display-perfil ul li{
+    list-style: none;
+    width: 100%;
+}
 @media(min-width: 320px) and (max-width: 768px) {
     .dashboard{
         display: flex;

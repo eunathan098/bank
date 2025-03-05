@@ -12,11 +12,17 @@
 </head>
 <body>
     <header>
-        <img src="./src/imagens/menu-mobile-lateral.png" alt="icone-menu-lateral" height="30px">
+        <img src="./src/imagens/menu-mobile-lateral.png" alt="icone-menu-lateral" height="30px" id="icon-abrir">
         
-        <img src="./src/imagens/perfil-2.jpg" alt="icone-perfil-usuario" class="perfil-img">
+        <img src="./src/imagens/perfil-2.jpg" alt="icone-perfil-usuario" class="perfil-img" id="img-perfil">
     </header>
-
+    <div id="container-display-perfil">
+        <ul>
+            <li class=""> <a href=""> Perfil </a></li>  
+            <li class=""> <a href=""> Clientes </a></li>  
+            <li class=""> <a href=""> Sair </a></li>  
+        </ul>
+    </div>
         <section class="content">
                 <div class="container-dashboard">
                     <h1 class="subtitulo"> Olá Sr. Nathan Boa tarde </h1>
@@ -55,6 +61,21 @@
                 </div>
             </div>
         </section>
+        <div class="container-menu-mobile" id="container-menu-mobile">
+            <div class="menu-mobile">
+                <div class="container-icon-mobile">
+                    <img src="src/imagens/menu-mobile-lateral.png" alt="" height="30px" id="icon-fechar">
+                </div>
+                <ul>
+                    <li class=""> <a href="" class="mobile-navigation"> Perfil </a></li>
+                    <li class=""> <a href="" class="mobile-navigation"> Receitas</a></li>
+                    <li class=""> <a href="" class="mobile-navigation"> Despesas </a></li>
+                    <li class=""> <a href="" class="mobile-navigation"> Clientes </a></li>
+                    <li class=""> <a href="" class="mobile-navigation"> Resumo </a></li>
+                    <li class=""> <a href="" class="mobile-navigation"> Histórico </a></li>
+                </ul>
+            </div>
+        </div>
     
 </body>
 </html>
