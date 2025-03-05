@@ -121,7 +121,7 @@ table{
     justify-content: center;
     border-radius: 8px;
     /* width: 80%; */
-    overflow-x: auto; /* Permite rolagem horizontal */
+    overflow-x: auto; /* Rolagem horizontal */
 }
 
 /* Contêiner para a tabela para permitir rolagem horizontal */
@@ -148,16 +148,14 @@ th {
 }
 
 /* Menu lateral Mobile */
-
-/* Menu lateral Mobile */
 #container-menu-mobile {
     position: fixed;
     top: 0;
-    left: -250px; /* Menu começando fora da tela */
+    left: -250px;
     width: 250px;
     height: 100%;
     background-color: #333;
-    transition: left 0.3s ease-in-out; /* Animação suave */
+    transition: left 0.3s ease-in-out;
     z-index: 1000;
 }
 
@@ -213,33 +211,70 @@ th {
 }
 
 /* Formulario adiciona registros */
-
 .form-adicionar{
     position: absolute;
     display: none;
-    padding: 20px;
     text-align: center;
     align-items: center;
     justify-content: center;
-    top: 30%;
+    top: 10%;
     width: 60%;
     flex-direction: column;
-    background-color: #FB7E00;
-    box-shadow: 10px 10px 10px 10px black;
+    background-color: #D1DFD2;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.383);
 }
 
-/* Footer - Rodapé */
-/* .developer{
-    bottom: 3%;
-    font-size: 14px;
-    color: rgba(0, 0, 0, 0.396);
+.container-title-form{
+    display: flex;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    background-color: #FB7E00;
+}
+
+.form-adicionar h1{
+    color: #fff;
     font-family: "Nunito", serif;
-} */
+}
+
+.container-inputs{
+    display: flex;
+    text-align: left;
+    justify-content: space-between;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+
+.container-inputs label{
+    color: rgba(0, 0, 0, 0.488);
+    font-weight: bold;
+    font-family: "Nunito", serif;
+}
+
+.container-inputs input{
+    padding: 10px;
+    width: 70%;
+    outline: none;
+    border: none;
+}
+
+#adicionar-linha{
+    color: #fff;
+    background-color: #FB7E00;
+    padding: 10px;
+    border: none;
+    margin-bottom: 10px;
+}
 
 /* Responsividade para telas menores */
 @media (max-width: 768px) {
     .tabela-financeira {
-        width: 100%; /* Garantir que o contêiner ocupe toda a largura da tela */
+        width: 100%;
     }
 
     table {

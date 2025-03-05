@@ -9,7 +9,7 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="Javascript/scriptDashboard.js" defer></script>
     <script src="dist/scriptReceitas.js" type="module" defer></script>
-    <title>Receitas</title>
+    <title> Receitas </title>
 </head>
 <body>
     <header>
@@ -48,26 +48,41 @@
 
         <!-- Formulario adicionar novo registro -->
         <section class="form-adicionar">
-            <label for="cliente">Cliente:</label><br>
-            <input type="text" id="cliente" placeholder="Digite o nome do cliente"><br>
+            <div class="container-title-form">
+                <h1> Adicione uma Receita </h1>
+            </div>
+            <div class="container-inputs">
+                <label for="cliente">Cliente:</label><br>
+                <input type="text" id="cliente" placeholder="Digite o nome do cliente" required>
+            </div>
             
-            <label for="descricao">Descrição:</label><br>
-            <input type="text" id="descricao" placeholder="Digite a descrição"><br>
+            <div class="container-inputs">
+                <label for="descricao">Descrição:</label><br>
+                <input type="text" id="descricao" placeholder="Digite a descrição" required>
+            </div>
             
-            <label for="natureza">Tipo de Natureza:</label><br>
-            <input type="text" id="natureza" placeholder="Digite o tipo de natureza"><br>
+            <div class="container-inputs">
+                <label for="natureza"> Natureza:</label><br>
+                <input type="text" id="natureza" placeholder="Digite o tipo de natureza" required>
+            </div>
             
-            <label for="valor">Valor:</label><br>
-            <input type="number" id="valor" placeholder="Digite o valor"><br>
+            <div class="container-inputs">
+                <label for="valor">Valor:</label><br>
+                <input type="number" id="valor" placeholder="Digite o valor" required>
+            </div>
+
+            <div class="container-inputs">
+                <label for="data-pagamento">Data de Pagamento:</label>
+                <input type="date" id="data-pagamento" required>
+            </div>
             
-            <label for="data-pagamento">Data de Pagamento:</label><br>
-            <input type="date" id="data-pagamento"><br>
-            
-            <label for="status">Status:</label><br>
-            <select id="status"><br>
-                <option value="Concluído">Concluído</option>
-                <option value="Pendente">Pendente</option>
-            </select><br><br>
+            <div class="container-inputs">
+                <label for="status">Status:</label><br>
+                <select id="status">
+                    <option value="Concluído">Concluído</option>
+                    <option value="Pendente">Pendente</option>
+                </select>
+            </div>
         
             <button id="adicionar-linha">Adicionar Linha</button>
         </section>

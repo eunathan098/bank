@@ -32,8 +32,6 @@ addLinha.addEventListener("click", function(){
     formAdicionar.style.display = "none";
 });
 
-
-
 // Função para filtrar registros listados em tela
 const filterReceitas = document.getElementById("filter-Receitas") as HTMLElement;
 
