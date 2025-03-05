@@ -147,6 +147,87 @@ th {
     cursor: pointer;
 }
 
+/* Menu lateral Mobile */
+
+/* Menu lateral Mobile */
+#container-menu-mobile {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Menu começando fora da tela */
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    transition: left 0.3s ease-in-out; /* Animação suave */
+    z-index: 1000;
+}
+
+/* Classe que indica que o menu está visível */
+#container-menu-mobile.show {
+    left: 0; /* Move o menu para dentro da tela */
+}
+.menu-mobile{
+    padding-top: 10px;
+    display: flex;
+    height: 100%;
+    width: 250px;
+    background-color: #FB7E00;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    text-align: left;
+}
+
+#icone-abrir{
+    cursor: pointer;
+}
+
+#icone-fechar{
+    cursor: pointer;
+}
+
+.container-icon-mobile{
+    display: flex;
+    margin-bottom: 20px;
+    text-align: left;
+    justify-content: left;
+    width: 100%;
+    padding-left: 10px;
+}
+
+.menu-mobile ul li{
+    border: 2px solid #ffffff1c;
+    padding: 10px;
+    width: 100%;
+}
+
+.menu-mobile ul li:hover{
+    color: #FB7E00;
+    background-color: #D1DFD2;
+}
+
+.mobile-navigation{
+    color: #fff;
+    font-family: "Nunito", serif;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+/* Formulario adiciona registros */
+
+.form-adicionar{
+    position: absolute;
+    display: none;
+    padding: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    top: 30%;
+    width: 60%;
+    flex-direction: column;
+    background-color: #FB7E00;
+    box-shadow: 10px 10px 10px 10px black;
+}
+
 /* Footer - Rodapé */
 /* .developer{
     bottom: 3%;
@@ -171,5 +252,9 @@ th {
 
     th, td {
         white-space: nowrap; /* Impede que o texto seja quebrado para várias linhas */
+    }
+
+    .form-adicionar{
+        width: 90%;
     }
 }

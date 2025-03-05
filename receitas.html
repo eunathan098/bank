@@ -8,25 +8,24 @@
     <link rel="stylesheet" href="src/css/styleReceitas.css">
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="Javascript/scriptDashboard.js" defer></script>
-    <title> Receitas </title>
+    <script src="dist/scriptReceitas.js" type="module" defer></script>
+    <title>Receitas</title>
 </head>
 <body>
     <header>
-        
-        <img src="./src/imagens/menu-mobile-lateral.png" alt="icone-menu-lateral" height="30px">
-        <h1> Receitas </h1>
+        <img src="./src/imagens/menu-mobile-lateral.png" alt="icone-menu-lateral" height="30px" id="icone-abrir">
+        <h1>Receitas</h1>
         <img src="./src/imagens/perfil-2.jpg" alt="icone-perfil-usuario" height="30px" class="perfil-img">
     </header>
 
     <section class="content">
         <div class="container-header">
-            <img src="src/imagens/mais.png" alt="" height="30px">
-            <img src="src/imagens/filtro.png" alt="" height="30px">
-            <img src="src/imagens/lixeira.png" alt="" height="30px">
+            <img src="src/imagens/mais.png" alt="" height="30px" id="add-Receitas">
+            <img src="src/imagens/filtro.png" alt="" height="30px" id="filter-Receitas">
+            <img src="src/imagens/lixeira.png" alt="" height="30px" id="lixeira-Receitas">
         </div>
+
         <div class="container-content-table">
-
-
             <section class="tabela-financeira">
                 <table>
                     <thead>
@@ -40,106 +39,56 @@
                             <th>Status</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <!-- Exemplo de Linha de Receita -->
-                        <tr class="header-table-columns">
-                            <td><input type="checkbox" class="selecionar-linha"></td>
-                            <td>Jose Alves</td>
-                            <td>Venda de Produto X</td>
-                            <td>Receita</td>
-                            <td>R$ 500,00</td>
-                            <td>01/03/2025</td>
-                            <td>Concluído</td>
-                        </tr>
-        
-                        <!-- Exemplo de Linha de Despesa -->
-                        <tr class="header-table-columns">
-                            <td><input type="checkbox" class="selecionar-linha"></td>
-                            <td>Francisco</td>
-                            <td>Compra de Insumos Y</td>
-                            <td>Despesa</td>
-                            <td>R$ 300,00</td>
-                            <td>02/03/2025</td>
-                            <td>Pendente</td>
-                        </tr>
-    
-                        <tr class="header-table-columns">
-                            <td><input type="checkbox" class="selecionar-linha"></td>
-                            <td>Maria Helena</td>
-                            <td>Compra de Insumos Y</td>
-                            <td>Despesa</td>
-                            <td>R$ 300,00</td>
-                            <td>02/03/2025</td>
-                            <td>Pendente</td>
-                        </tr>
-    
-                        <tr class="header-table-columns">
-                            <td><input type="checkbox" class="selecionar-linha"></td>
-                            <td>Julia Silva</td>
-                            <td>Compra de Insumos Y</td>
-                            <td>Despesa</td>
-                            <td>R$ 300,00</td>
-                            <td>02/03/2025</td>
-                            <td>Pendente</td>
-                        </tr>
-    
-                        <tr class="header-table-columns">
-                            <td><input type="checkbox" class="selecionar-linha"></td>
-                            <td>Julia Silva</td>
-                            <td>Compra de Insumos Y</td>
-                            <td>Despesa</td>
-                            <td>R$ 300,00</td>
-                            <td>02/03/2025</td>
-                            <td>Pendente</td>
-                        </tr>
-    
-                        <tr class="header-table-columns">
-                            <td><input type="checkbox" class="selecionar-linha"></td>
-                            <td>Julia Silva</td>
-                            <td>Compra de Insumos Y</td>
-                            <td>Despesa</td>
-                            <td>R$ 300,00</td>
-                            <td>02/03/2025</td>
-                            <td>Pendente</td>
-                        </tr>
-
-                        <tr class="header-table-columns">
-                            <td><input type="checkbox" class="selecionar-linha"></td>
-                            <td>Julia Silva</td>
-                            <td>Compra de Insumos Y</td>
-                            <td>Despesa</td>
-                            <td>R$ 300,00</td>
-                            <td>02/03/2025</td>
-                            <td>Pendente</td>
-                        </tr>
-
-                        <tr class="header-table-columns">
-                            <td><input type="checkbox" class="selecionar-linha"></td>
-                            <td>Julia Silva</td>
-                            <td>Compra de Insumos Y</td>
-                            <td>Despesa</td>
-                            <td>R$ 300,00</td>
-                            <td>02/03/2025</td>
-                            <td>Pendente</td>
-                        </tr>
-
-                        <tr class="header-table-columns">
-                            <td><input type="checkbox" class="selecionar-linha"></td>
-                            <td>Julia Silva</td>
-                            <td>Compra de Insumos Y</td>
-                            <td>Despesa</td>
-                            <td>R$ 300,00</td>
-                            <td>02/03/2025</td>
-                            <td>Pendente</td>
-                        </tr>
-        
-                        <!-- Adicionar mais linhas aqui conforme necessário -->
+                    <tbody id="tabela-body">
+                        <!-- As linhas da tabela serão preenchidas aqui via JavaScript -->
                     </tbody>
                 </table>
             </section>
-
-
         </div>
+
+        <!-- Formulario adicionar novo registro -->
+        <section class="form-adicionar">
+            <label for="cliente">Cliente:</label><br>
+            <input type="text" id="cliente" placeholder="Digite o nome do cliente"><br>
             
+            <label for="descricao">Descrição:</label><br>
+            <input type="text" id="descricao" placeholder="Digite a descrição"><br>
+            
+            <label for="natureza">Tipo de Natureza:</label><br>
+            <input type="text" id="natureza" placeholder="Digite o tipo de natureza"><br>
+            
+            <label for="valor">Valor:</label><br>
+            <input type="number" id="valor" placeholder="Digite o valor"><br>
+            
+            <label for="data-pagamento">Data de Pagamento:</label><br>
+            <input type="date" id="data-pagamento"><br>
+            
+            <label for="status">Status:</label><br>
+            <select id="status"><br>
+                <option value="Concluído">Concluído</option>
+                <option value="Pendente">Pendente</option>
+            </select><br><br>
+        
+            <button id="adicionar-linha">Adicionar Linha</button>
+        </section>
+        
+    </section>
+
+    <!-- Menu lateral Mobile -->
+    <div class="container-menu-mobile" id="container-menu-mobile">
+        <div class="menu-mobile">
+            <div class="container-icon-mobile">
+                <img src="src/imagens/menu-mobile-lateral.png" alt="" height="30px" id="icone-fechar">
+            </div>
+            <ul>
+                <li class=""> <a href="" class="mobile-navigation"> Perfil </a></li>
+                <li class=""> <a href="" class="mobile-navigation"> Receitas</a></li>
+                <li class=""> <a href="" class="mobile-navigation"> Despesas </a></li>
+                <li class=""> <a href="" class="mobile-navigation"> Clientes </a></li>
+                <li class=""> <a href="" class="mobile-navigation"> Resumo </a></li>
+                <li class=""> <a href="" class="mobile-navigation"> Histórico </a></li>
+            </ul>
+        </div>
+    </div>
 </body>
 </html>
